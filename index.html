@@ -46,7 +46,7 @@
                     <img src="svg/WEB PAGE.svg" alt="WEB PAGE">
                     <h3>SUA MARCA EM DESTAQUE</h3>
                     <p> criamos sua página na web para impulsionar seu negócio alcançando novos clientes.</p>
-                    <a class="styled-button" href="">Entre Em Contato</a>
+                    <a class="styled-button" href="#CONTATO">Entre Em Contato</a>
                 </div>
 
                 <div class="seviço">
@@ -54,7 +54,7 @@
                     <img src="svg/software.svg" alt=" software">
                     <h3>SIMPLIFIQUE PROCESSOS COMPLEXOS</h3>
                     <p>Criamos software para automatizar procedimentos específicos da sua empresa.</p>
-                    <a class="styled-button" href="">Entre Em Contato</a>
+                    <a class="styled-button" href="#CONTATO">Entre Em Contato</a>
                 </div>
 
                 <div class="seviço">
@@ -62,7 +62,7 @@
                     <img src="svg/Consultoria.svg" alt="Consultoria">
                     <h3>ENTENDEMOS O QUE SEU NEGÓCIO PRECISA</h3>
                     <p>consultoria para identificamos oportunidades de otimização através de soluções personalizadas</p>
-                    <a class="styled-button" href="">Entre Em Contato</a>
+                    <a class="styled-button" href="#CONTATO">Entre Em Contato</a>
                 </div>
        </section>
        <section id="PORTIFOLIO">
@@ -107,8 +107,9 @@
             <h3>Sou Bacharel em Sistemas de Informação pela Universidade Federal Rural do Semiárido (UFERSA) e acumulo experiência como Desenvolvedor Full Stack na Turing Tecnologia. Participei ativamente em diversos projetos, adquirindo habilidades abrangentes no desenvolvimento de sistemas.</h3>            
 
             <div class="tecnologias">
-                <img src="svg/react.svg" alt="react">
                 <img src="svg/java.svg" alt="java">
+                <img src="svg/angular.svg" alt="angular">
+                <img src="svg/react.svg" alt="react">
                 <img src="svg/nodejs.svg" alt="nodejs">
             </div>
 
@@ -122,7 +123,9 @@
                 <img src="svg/mensagem.svg" alt="sua duvidas">
             </div>
             <div class="form">
-                <form action="#" method="POST">
+                
+                <form action="https://api.staticforms.xyz/submit" method="POST">
+                    <input type="hidden" name="accessKey" value="8841b74b-e67d-4a8a-9a51-251f1e27087e" style="display: none;">
                     <div class="form-group">
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" required>
@@ -139,7 +142,9 @@
                         <label for="message">Mensagem:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button class="bbutton" type="submit">Enviar</button>
+                    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                    <button class="bbutton" type="submit">Enviar</button> 
+                
                 </form>
             </div>
         </div>
@@ -155,5 +160,10 @@
         <div class="todosd"><h4>TODOS OS DIREITOS RESERVADOS</h4></div>
     </footer>
     <script src="/scripts/scripts.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            alert('Obrigado por entrar em contato! Nós responderemos em breve.');
+        });
+    </script>
 </body>
 </html>
