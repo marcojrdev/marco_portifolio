@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/seviços.css">
+    <link rel="stylesheet" href="/style/rodape.css">
+    <link rel="stylesheet" href="/style/portifolio.css">
+    <link rel="stylesheet" href="/style/contato.css">
+    <link rel="stylesheet" href="/style/sobre.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="svg/Group 3.svg" alt=""></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#SERVIÇOS">SERVIÇOS</a></li>
+                <li><a href="#PORTIFOLIO">PORTIFOLIO</a></li>
+                <li><a href="#SOBRE">SOBRE</a></li>
+                <li><a href="#CONTATO">CONTATO</a></li>
+            </ul>
+            <div class="menu-icon" id="menuIcon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="conteudo">
+                <img src="svg/Group 3.svg" alt="">
+                <h1>Criando Soluções Que Impulsiona Mudanças</h1>
+                <p>Criando sites, sistemas web e aplicativos que impulsionam mudanças e agregam valor ao seu negócio. O objetivo é transformar suas ideias em realidade com soluções tecnológicas inovadoras e eficientes.</p>
+                <a class="styled-button" href="#SERVIÇOS">Saiba + </a>
+            </div>
+        </section>
+    </header>
+    <main>
+       <section id="SERVIÇOS">
+                <div class="seviço">
+                    <h1>Web Page</h1>
+                    <img src="svg/WEB PAGE.svg" alt="WEB PAGE">
+                    <h3>SUA MARCA EM DESTAQUE</h3>
+                    <p> criamos sua página na web para impulsionar seu negócio alcançando novos clientes.</p>
+                    <a class="styled-button" href="">Entre Em Contato</a>
+                </div>
+
+                <div class="seviço">
+                    <h1>Software</h1>
+                    <img src="svg/software.svg" alt=" software">
+                    <h3>SIMPLIFIQUE PROCESSOS COMPLEXOS</h3>
+                    <p>Criamos software para automatizar procedimentos específicos da sua empresa.</p>
+                    <a class="styled-button" href="">Entre Em Contato</a>
+                </div>
+
+                <div class="seviço">
+                    <h1>Consultoria</h1>
+                    <img src="svg/Consultoria.svg" alt="Consultoria">
+                    <h3>ENTENDEMOS O QUE SEU NEGÓCIO PRECISA</h3>
+                    <p>consultoria para identificamos oportunidades de otimização através de soluções personalizadas</p>
+                    <a class="styled-button" href="">Entre Em Contato</a>
+                </div>
+       </section>
+       <section id="PORTIFOLIO">
+            <div class="portifoliotext">
+                <h1>PORTIFOLIO</h1>
+                <h3>Explore alguns dos projetos que desenvolvemos</h3>
+            </div>
+            <div class="slide-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/alertasite.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cumaru1.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/Latic1.png" alt="Slide 3">
+                    </div>
+                </div>
+                <!-- <div class="slidesphone">
+                    <div class="slide">
+                        <img src="img/alertapromocel.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cumarucel.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/laticcel.png" alt="Slide 3">
+                    </div>
+                </div>-->
+                <div class="navigation">
+                    <a href="#PORTIFOLIO" id="prev">&#10094;</a>
+                    <a href="#PORTIFOLIO" id="next">&#10095;</a>
+                </div>
+            </div>
+       </section>
+
+       <section id="SOBRE" >
+        <div class="foto"><img src="img/MARCO.png" alt="Marco Junior"></div>
+        <div class="conteudosobre">
+            <h1>SOBRE</h1>
+            <h3>Sou Bacharel em Sistemas de Informação pela Universidade Federal Rural do Semiárido (UFERSA) e acumulo experiência como Desenvolvedor Full Stack na Turing Tecnologia. Participei ativamente em diversos projetos, adquirindo habilidades abrangentes no desenvolvimento de sistemas.</h3>            
+
+            <div class="tecnologias">
+                <img src="svg/react.svg" alt="react">
+                <img src="svg/java.svg" alt="java">
+                <img src="svg/nodejs.svg" alt="nodejs">
+            </div>
+
+        </div>
+       </section>
+       
+       <section id="CONTATO" >
+        <div class="containecontato">
+            <div class="duvidas">
+                <h1>TIRE SUAS DUVIDAS</h1>
+                <img src="svg/mensagem.svg" alt="sua duvidas">
+            </div>
+            <div class="form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button class="bbutton" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+       </section>
+
+    </main>
+    <footer id="rodape">
+        <div class="redfoot">
+            <a href="https://www.linkedin.com/in/marco-junior-307513216/"><img src="svg/LinkedIn_icon-icons.com_55877 (2) 1.svg" alt=""></a>
+            <a href="https://github.com/marcojrdev"><img src="svg/Vector.svg" alt=""></a>
+            <a href="mailto:contactmarcojr@gmail.com"><img src="svg/email_envelope_icon_148215 1.svg" alt=""></a>
+        </div>
+        <div class="todosd"><h4>TODOS OS DIREITOS RESERVADOS</h4></div>
+    </footer>
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>

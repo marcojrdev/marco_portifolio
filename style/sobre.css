@@ -1,0 +1,58 @@
+#SOBRE {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+}
+
+.conteudosobre {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30vw;
+    align-items: center;
+}
+
+.conteudosobre h1 {
+    font-size: 3rem;
+}
+
+.conteudosobre h3 {
+    width: 25vw;
+    font-size: 1.5rem;
+}
+
+.foto img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1122px) {
+    #SOBRE {
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .foto {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .foto img {
+        width: 80%;
+       
+    }
+    .conteudosobre {
+       width: 80vw;
+      
+    }
+    .conteudosobre h3 {
+        width: 90vw;
+        font-size: 1rem;
+    }
+
+}
